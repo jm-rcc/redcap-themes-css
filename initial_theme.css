@@ -1,0 +1,159 @@
+/* ==========================================
+   BACKGROUND & CONTAINER
+   ========================================== */
+
+/* Main survey background */
+body {
+    background-color: #f5f5f5; /* Change this: light gray background */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Survey container - the white box containing your questions */
+#questiontable {
+    background-color: #ffffff; /* Change this: white survey box */
+    max-width: 900px; /* Change this: adjust survey width */
+    margin: 40px auto; /* Change this: spacing above/below survey */
+    padding: 40px 50px; /* Change this: internal spacing */
+    border-radius: 8px; /* Change this: rounded corners (0 = square) */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1); /* Change this: subtle shadow */
+}
+
+/* ==========================================
+   SPACING & LAYOUT
+   ========================================== */
+
+/* Space between questions */
+tr.surveyquestion {
+    margin-bottom: 25px; /* Change this: space between questions */
+}
+
+/* Question text */
+.surveyquestion td.questionnum,
+.surveyquestion td.labelrc {
+    padding: 15px 0; /* Change this: spacing around question text */
+    line-height: 1.6;
+}
+
+/* Space between question and answer fields */
+.surveyquestion td.data {
+    padding-top: 10px; /* Change this: space above answer options */
+    padding-bottom: 20px; /* Change this: space below answer options */
+}
+
+/* ==========================================
+   TYPOGRAPHY
+   ========================================== */
+
+/* Survey title */
+#surveytitle {
+    font-size: 28px; /* Change this: title size */
+    color: #333333; /* Change this: title color */
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+/* Survey instructions/description */
+#surveyinstructions {
+    font-size: 16px;
+    color: #666666;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+/* Question text */
+.surveyquestion .labelrc {
+    font-size: 16px; /* Change this: question text size */
+    color: #333333; /* Change this: question text color */
+    font-weight: 500;
+}
+
+/* Field notes (help text under questions) */
+.note {
+    font-size: 14px;
+    color: #888888;
+    font-style: italic;
+    margin-top: 5px;
+}
+
+/* ==========================================
+   BUTTONS
+   ========================================== */
+
+/* Submit/Next/Previous buttons */
+button, input[type="submit"], .btn {
+    background-color: #4CAF50; /* Change this: button color */
+    color: white;
+    padding: 12px 30px; /* Change this: button size */
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover, input[type="submit"]:hover {
+    background-color: #45a049; /* Change this: button hover color */
+}
+
+/* ==========================================
+   INPUT FIELDS
+   ========================================== */
+
+/* Text input boxes */
+input[type="text"],
+input[type="email"],
+input[type="number"],
+textarea,
+select {
+    border: 1px solid #ddd; /* Change this: input border color */
+    border-radius: 4px;
+    padding: 10px; /* Change this: space inside input boxes */
+    font-size: 15px;
+    width: 100%;
+    max-width: 500px; /* Change this: maximum width of text fields */
+}
+
+input[type="text"]:focus,
+textarea:focus,
+select:focus {
+    border-color: #4CAF50; /* Change this: border color when clicked */
+    outline: none;
+}
+
+/* ==========================================
+   RADIO BUTTONS & CHECKBOXES
+   ========================================== */
+
+/* Space between radio/checkbox options */
+.Choice {
+    margin-bottom: 8px; /* Change this: space between options */
+}
+
+/* Radio and checkbox labels */
+label {
+    cursor: pointer;
+    font-size: 15px;
+}
+
+/* ==========================================
+   PROGRESS BAR (if enabled)
+   ========================================== */
+
+#pagecontainer {
+    margin-bottom: 20px;
+}
+
+/* ==========================================
+   MOBILE RESPONSIVENESS
+   ========================================== */
+
+@media (max-width: 768px) {
+    #questiontable {
+        margin: 20px 15px; /* Reduce margins on mobile */
+        padding: 25px 20px; /* Reduce padding on mobile */
+    }
+    
+    #surveytitle {
+        font-size: 24px;
+    }
+}
