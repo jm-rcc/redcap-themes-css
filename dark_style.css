@@ -1,0 +1,213 @@
+/* ==========================================
+   DARK MODE - BACKGROUND & CONTAINER
+   ========================================== */
+
+/* Main survey background */
+body {
+    background-color: #1a1a1a; /* Change this: dark background */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Survey container - the darker box containing your questions */
+#questiontable {
+    background-color: #2d2d2d; /* Change this: dark gray survey box */
+    max-width: 900px; /* Change this: adjust survey width */
+    margin: 40px auto; /* Change this: spacing above/below survey */
+    padding: 40px 50px; /* Change this: internal spacing */
+    border-radius: 8px; /* Change this: rounded corners (0 = square) */
+    box-shadow: 0 2px 16px rgba(0,0,0,0.4); /* Change this: deeper shadow for depth */
+}
+
+/* ==========================================
+   SPACING & LAYOUT
+   ========================================== */
+
+/* Space between questions */
+tr.surveyquestion {
+    margin-bottom: 25px; /* Change this: space between questions */
+}
+
+/* Question text */
+.surveyquestion td.questionnum,
+.surveyquestion td.labelrc {
+    padding: 15px 0; /* Change this: spacing around question text */
+    line-height: 1.6;
+}
+
+/* Space between question and answer fields */
+.surveyquestion td.data {
+    padding-top: 10px; /* Change this: space above answer options */
+    padding-bottom: 20px; /* Change this: space below answer options */
+}
+
+/* ==========================================
+   TYPOGRAPHY - DARK MODE
+   ========================================== */
+
+/* Survey title */
+#surveytitle {
+    font-size: 28px; /* Change this: title size */
+    color: #f0f0f0; /* Change this: light title color */
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+/* Survey instructions/description */
+#surveyinstructions {
+    font-size: 16px;
+    color: #b0b0b0; /* Change this: muted light gray for instructions */
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+/* Question text */
+.surveyquestion .labelrc {
+    font-size: 16px; /* Change this: question text size */
+    color: #e8e8e8; /* Change this: light question text color */
+    font-weight: 500;
+}
+
+/* Field notes (help text under questions) */
+.note {
+    font-size: 14px;
+    color: #999999; /* Change this: dimmed help text */
+    font-style: italic;
+    margin-top: 5px;
+}
+
+/* ==========================================
+   BUTTONS - DARK MODE
+   ========================================== */
+
+/* Submit/Next/Previous buttons */
+button, input[type="submit"], .btn {
+    background-color: #5cb85c; /* Change this: button color (brighter green for contrast) */
+    color: #ffffff;
+    padding: 12px 30px; /* Change this: button size */
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover, input[type="submit"]:hover {
+    background-color: #4cae4c; /* Change this: button hover color */
+}
+
+/* ==========================================
+   INPUT FIELDS - DARK MODE
+   ========================================== */
+
+/* Text input boxes */
+input[type="text"],
+input[type="email"],
+input[type="number"],
+textarea,
+select {
+    background-color: #3a3a3a; /* Change this: dark input background */
+    border: 1px solid #555555; /* Change this: subtle border */
+    border-radius: 4px;
+    padding: 10px; /* Change this: space inside input boxes */
+    font-size: 15px;
+    color: #e8e8e8; /* Change this: light text in inputs */
+    width: 100%;
+    max-width: 500px; /* Change this: maximum width of text fields */
+}
+
+input[type="text"]:focus,
+textarea:focus,
+select:focus {
+    border-color: #5cb85c; /* Change this: border color when clicked */
+    background-color: #424242; /* Change this: slightly lighter when focused */
+    outline: none;
+}
+
+/* Placeholder text */
+input::placeholder,
+textarea::placeholder {
+    color: #888888; /* Change this: placeholder text color */
+}
+
+/* ==========================================
+   RADIO BUTTONS & CHECKBOXES - DARK MODE
+   ========================================== */
+
+/* Space between radio/checkbox options */
+.Choice {
+    margin-bottom: 8px; /* Change this: space between options */
+}
+
+/* Radio and checkbox labels */
+label {
+    cursor: pointer;
+    font-size: 15px;
+    color: #d8d8d8; /* Change this: label text color */
+}
+
+/* Style the actual radio buttons and checkboxes for better visibility */
+input[type="radio"],
+input[type="checkbox"] {
+    accent-color: #5cb85c; /* Change this: checkbox/radio button color */
+}
+
+/* ==========================================
+   PROGRESS BAR (if enabled) - DARK MODE
+   ========================================== */
+
+#pagecontainer {
+    margin-bottom: 20px;
+}
+
+/* Progress bar background */
+.progress {
+    background-color: #3a3a3a;
+}
+
+/* Progress bar fill */
+.progress-bar {
+    background-color: #5cb85c; /* Change this: progress bar color */
+}
+
+/* ==========================================
+   ADDITIONAL DARK MODE ELEMENTS
+   ========================================== */
+
+/* Table borders and dividers */
+table, tr, td {
+    border-color: #444444 !important; /* Change this: subtle borders */
+}
+
+/* Links */
+a {
+    color: #66b3ff; /* Change this: link color */
+}
+
+a:hover {
+    color: #99ccff; /* Change this: link hover color */
+}
+
+/* Required field asterisks */
+.requiredlabel {
+    color: #ff6b6b; /* Change this: red for required fields */
+}
+
+/* Error messages */
+.red {
+    color: #ff6b6b !important; /* Change this: error text color */
+}
+
+/* ==========================================
+   MOBILE RESPONSIVENESS
+   ========================================== */
+
+@media (max-width: 768px) {
+    #questiontable {
+        margin: 20px 15px; /* Reduce margins on mobile */
+        padding: 25px 20px; /* Reduce padding on mobile */
+    }
+    
+    #surveytitle {
+        font-size: 24px;
+    }
+}
