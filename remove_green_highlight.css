@@ -1,0 +1,18 @@
+/* ==========================================
+   REMOVE REDCAP'S .greenhighlight CLASS
+   ========================================== */
+
+.greenhighlight,
+input.greenhighlight,
+textarea.greenhighlight,
+select.greenhighlight,
+.greenhighlight:focus {
+    background-color: #424242 !important; /* Change this: focused state background */
+}
+
+/* Also override it in combination with other states */
+input.greenhighlight:focus,
+textarea.greenhighlight:focus,
+select.greenhighlight:focus {
+    background-color: #424242 !important;
+}
